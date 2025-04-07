@@ -39,7 +39,8 @@ class Magalu(scrapy.Spider):
 
             yield {
                 'title' : title,
-                'price' : price
+                'price' : price,
+                'review': review
             }
 
         # if response.xpath('//button[@type="next"]').get():
