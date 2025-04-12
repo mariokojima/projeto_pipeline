@@ -3,6 +3,8 @@
 import psycopg2
 import pandas as pd
 import os
+from minio import Minio
+import datetime
 
 def load_csv_to_postgres(csv_file_path, db_params):
 
@@ -60,13 +62,42 @@ def load_csv_to_postgres(csv_file_path, db_params):
     except Exception as e:
         print(f"An error occurred: {e}")
 
+def archive_file(source_file,destination_file):
+    
+    client = Minio("localhost:9000",
+        access_key="3CgUW1lajI8g9uGB",
+        secret_key="fjzhkS7rCpXMzdMI9Ok5ISK0yrtGtyqS",
+        secure=False
+    )
+    bucket_name = "bucket-coleta"
+
+    # Make the bucket if it doesn't exist.
+    found = client.bucket_exists(bucket_name)
+    if not found:
+        client.make_bucket(bucket_name)
+        print("Created bucket", bucket_name)
+    else:
+        print("Bucket", bucket_name, "already exists")
+
+
+
+    # Upload the file, renaming it in the process
+    client.fput_object(
+        bucket_name, destination_file, source_file,
+    )
+    print(
+        source_file, "Arquivado com Sucesso ",
+        destination_file, "no repositório", bucket_name,
+    )    
+
 if __name__ == "__main__":
-    # Database connection parameters
+
+    # conexão com postgres
     db_params = {
-        'host': 'localhost',  # Replace with your PostgreSQL host
-        'database': 'postgres', # Replace with your database name
-        'user': 'postgres',     # Replace with your database username
-        'password': '1234'  # Replace with your database password
+        'host': 'localhost',  
+        'database': 'postgres', 
+        'user': 'postgres',     
+        'password': '1234'  
     }
     conn = psycopg2.connect(**db_params)    
     cur = conn.cursor()
@@ -77,8 +108,7 @@ if __name__ == "__main__":
         print(row)
     
 
-    # Replace with the actual path of your CSV file
-    csv_file_path = 'scrap_result.csv' 
+    csv_file_path = '/Users/mario/Workspaces/MESTRADO_MACKENZIE/COLETA/PROJETO/scrap_result.csv' 
 
     # Check if file exists
     if not os.path.exists(csv_file_path):
@@ -86,3 +116,6 @@ if __name__ == "__main__":
     else:
         # Load data into the database
         load_csv_to_postgres(csv_file_path, db_params)
+        destination_file = f"scrap_result_{str(datetime.datetime.now()).replace(' ','_').split('.')[0]}.csv"
+        archive_file(csv_file_path, destination_file)
+        os.remove(csv_file_path)

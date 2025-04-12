@@ -1,0 +1,4 @@
+minio
+scrapy
+psycopg2
+pandas
