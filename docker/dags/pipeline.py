@@ -1,5 +1,5 @@
 from airflow import DAG
-from airflow.operator.python_operator import PythonOperator
+from airflow.operators.python import PythonOperator
 from datetime import datetime
 import pandas as pd
 
@@ -21,7 +21,7 @@ dag =  DAG(
     'dag_gera_csv',
     default_args = default_args,
     description = 'Teste Airflow',
-    schedule_interval = None,
+    schedule = None,
     catchup=False,
     tags=['teste']
 )
