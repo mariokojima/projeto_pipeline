@@ -2309,3 +2309,885 @@
 [2025-04-12T22:55:50.851+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:55:50.850+0000] {dag.py:3239} INFO - Sync 1 DAGs
 [2025-04-12T22:55:50.899+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:55:50.899+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
 [2025-04-12T22:55:50.929+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.155 seconds
+[2025-04-12T22:56:21.110+0000] {processor.py:186} INFO - Started process (PID=2334) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:56:21.112+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T22:56:21.116+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:56:21.116+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:56:21.133+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:56:21.174+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:56:21.173+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T22:56:21.220+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:56:21.219+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T22:56:21.251+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.148 seconds
+[2025-04-12T22:56:51.492+0000] {processor.py:186} INFO - Started process (PID=2344) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:56:51.494+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T22:56:51.498+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:56:51.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:56:51.520+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:56:51.567+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:56:51.567+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T22:56:51.618+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:56:51.618+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T22:56:51.793+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.309 seconds
+[2025-04-12T22:57:22.102+0000] {processor.py:186} INFO - Started process (PID=2354) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:57:22.103+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T22:57:22.107+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:57:22.107+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:57:22.124+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:57:22.164+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:57:22.164+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T22:57:22.340+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:57:22.340+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T22:57:22.367+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.273 seconds
+[2025-04-12T22:57:52.587+0000] {processor.py:186} INFO - Started process (PID=2365) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:57:52.589+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T22:57:52.592+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:57:52.592+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:57:52.612+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:57:52.657+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:57:52.657+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T22:57:52.705+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:57:52.705+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T22:57:52.734+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.155 seconds
+[2025-04-12T22:58:22.949+0000] {processor.py:186} INFO - Started process (PID=2375) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:58:22.951+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T22:58:22.954+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:58:22.954+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:58:22.986+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:58:23.028+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:58:23.028+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T22:58:23.074+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:58:23.074+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T22:58:23.100+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.158 seconds
+[2025-04-12T22:58:53.410+0000] {processor.py:186} INFO - Started process (PID=2384) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:58:53.411+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T22:58:53.416+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:58:53.416+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:58:53.437+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:58:53.478+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:58:53.477+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T22:58:53.526+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:58:53.526+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T22:58:53.555+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.153 seconds
+[2025-04-12T22:59:23.762+0000] {processor.py:186} INFO - Started process (PID=2394) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:59:23.764+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T22:59:23.767+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:59:23.766+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:59:23.784+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:59:23.823+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:59:23.823+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T22:59:23.865+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:59:23.865+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T22:59:23.893+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T22:59:54.129+0000] {processor.py:186} INFO - Started process (PID=2404) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:59:54.131+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T22:59:54.134+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:59:54.134+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:59:54.153+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T22:59:54.194+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:59:54.194+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T22:59:54.237+0000] {logging_mixin.py:190} INFO - [2025-04-12T22:59:54.237+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T22:59:54.405+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.283 seconds
+[2025-04-12T23:00:24.677+0000] {processor.py:186} INFO - Started process (PID=2413) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:00:24.679+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:00:24.683+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:00:24.683+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:00:24.700+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:00:24.736+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:00:24.736+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:00:24.779+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:00:24.779+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:00:24.806+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.136 seconds
+[2025-04-12T23:00:55.079+0000] {processor.py:186} INFO - Started process (PID=2422) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:00:55.081+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:00:55.084+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:00:55.084+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:00:55.102+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:00:55.138+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:00:55.138+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:00:55.181+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:00:55.180+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:00:55.207+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.135 seconds
+[2025-04-12T23:01:25.434+0000] {processor.py:186} INFO - Started process (PID=2431) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:01:25.436+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:01:25.439+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:01:25.439+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:01:25.456+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:01:25.499+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:01:25.499+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:01:25.548+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:01:25.548+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:01:25.574+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.147 seconds
+[2025-04-12T23:01:55.831+0000] {processor.py:186} INFO - Started process (PID=2440) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:01:55.833+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:01:55.836+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:01:55.835+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:01:55.852+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:01:55.891+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:01:55.891+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:01:55.932+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:01:55.932+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:01:55.962+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T23:02:26.068+0000] {processor.py:186} INFO - Started process (PID=2448) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:02:26.069+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:02:26.073+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:02:26.072+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:02:26.090+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:02:26.131+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:02:26.130+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:02:26.179+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:02:26.179+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:02:26.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.312 seconds
+[2025-04-12T23:02:56.643+0000] {processor.py:186} INFO - Started process (PID=2457) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:02:56.645+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:02:56.649+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:02:56.648+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:02:56.669+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:02:56.718+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:02:56.718+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:02:56.951+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:02:56.951+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:02:56.987+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.353 seconds
+[2025-04-12T23:03:27.227+0000] {processor.py:186} INFO - Started process (PID=2467) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:03:27.229+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:03:27.233+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:03:27.233+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:03:27.254+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:03:27.300+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:03:27.299+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:03:27.349+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:03:27.349+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:03:27.384+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.164 seconds
+[2025-04-12T23:03:57.704+0000] {processor.py:186} INFO - Started process (PID=2478) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:03:57.706+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:03:57.710+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:03:57.710+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:03:57.729+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:03:57.772+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:03:57.772+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:03:57.818+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:03:57.818+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:03:57.847+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.151 seconds
+[2025-04-12T23:04:28.138+0000] {processor.py:186} INFO - Started process (PID=2487) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:04:28.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:04:28.144+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:04:28.143+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:04:28.161+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:04:28.198+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:04:28.197+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:04:28.238+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:04:28.238+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:04:28.267+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T23:04:58.541+0000] {processor.py:186} INFO - Started process (PID=2497) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:04:58.542+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:04:58.546+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:04:58.546+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:04:58.563+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:04:58.600+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:04:58.600+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:04:58.645+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:04:58.644+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:04:58.672+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T23:05:28.973+0000] {processor.py:186} INFO - Started process (PID=2506) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:05:28.975+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:05:28.978+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:05:28.978+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:05:28.997+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:05:29.045+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:05:29.044+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:05:29.099+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:05:29.098+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:05:29.267+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.301 seconds
+[2025-04-12T23:05:59.554+0000] {processor.py:186} INFO - Started process (PID=2517) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:05:59.556+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:05:59.559+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:05:59.559+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:05:59.576+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:05:59.616+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:05:59.616+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:05:59.797+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:05:59.796+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:05:59.822+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.275 seconds
+[2025-04-12T23:06:30.082+0000] {processor.py:186} INFO - Started process (PID=2527) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:06:30.084+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:06:30.087+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:06:30.087+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:06:30.108+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:06:30.150+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:06:30.150+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:06:30.198+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:06:30.198+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:06:30.247+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.172 seconds
+[2025-04-12T23:07:00.492+0000] {processor.py:186} INFO - Started process (PID=2544) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:07:00.493+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:07:00.497+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:07:00.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:07:00.515+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:07:00.552+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:07:00.552+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:07:00.597+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:07:00.597+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:07:00.626+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.142 seconds
+[2025-04-12T23:07:30.862+0000] {processor.py:186} INFO - Started process (PID=2554) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:07:30.863+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:07:30.867+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:07:30.866+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:07:30.884+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:07:30.923+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:07:30.922+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:07:30.969+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:07:30.968+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:07:30.995+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.142 seconds
+[2025-04-12T23:08:01.263+0000] {processor.py:186} INFO - Started process (PID=2564) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:08:01.265+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:08:01.268+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:08:01.268+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:08:01.285+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:08:01.325+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:08:01.325+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:08:01.369+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:08:01.369+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:08:01.398+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.142 seconds
+[2025-04-12T23:08:31.657+0000] {processor.py:186} INFO - Started process (PID=2573) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:08:31.659+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:08:31.662+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:08:31.662+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:08:31.679+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:08:31.717+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:08:31.716+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:08:31.762+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:08:31.762+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:08:31.949+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.300 seconds
+[2025-04-12T23:09:02.268+0000] {processor.py:186} INFO - Started process (PID=2583) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:09:02.270+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:09:02.274+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:09:02.274+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:09:02.296+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:09:02.337+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:09:02.337+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:09:02.392+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:09:02.392+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:09:02.419+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.159 seconds
+[2025-04-12T23:09:32.738+0000] {processor.py:186} INFO - Started process (PID=2593) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:09:32.740+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:09:32.744+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:09:32.744+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:09:32.769+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:09:32.827+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:09:32.826+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:09:32.894+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:09:32.894+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:09:32.938+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.209 seconds
+[2025-04-12T23:10:03.246+0000] {processor.py:186} INFO - Started process (PID=2603) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:10:03.248+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:10:03.251+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:10:03.251+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:10:03.269+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:10:03.311+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:10:03.310+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:10:03.363+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:10:03.362+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:10:03.389+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.150 seconds
+[2025-04-12T23:10:33.665+0000] {processor.py:186} INFO - Started process (PID=2612) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:10:33.667+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:10:33.670+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:10:33.670+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:10:33.688+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:10:33.728+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:10:33.728+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:10:33.772+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:10:33.772+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:10:33.799+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.141 seconds
+[2025-04-12T23:11:04.093+0000] {processor.py:186} INFO - Started process (PID=2621) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:11:04.094+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:11:04.098+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:11:04.097+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:11:04.116+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:11:04.155+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:11:04.154+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:11:04.200+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:11:04.199+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:11:04.363+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.278 seconds
+[2025-04-12T23:11:34.656+0000] {processor.py:186} INFO - Started process (PID=2632) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:11:34.657+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:11:34.661+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:11:34.660+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:11:34.679+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:11:34.715+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:11:34.715+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:11:34.916+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:11:34.916+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:11:34.947+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.299 seconds
+[2025-04-12T23:12:05.231+0000] {processor.py:186} INFO - Started process (PID=2642) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:12:05.234+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:12:05.241+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:12:05.240+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:12:05.268+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:12:05.317+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:12:05.317+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:12:05.377+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:12:05.377+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:12:05.404+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.184 seconds
+[2025-04-12T23:12:35.737+0000] {processor.py:186} INFO - Started process (PID=2653) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:12:35.738+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:12:35.742+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:12:35.742+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:12:35.762+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:12:35.805+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:12:35.804+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:12:35.857+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:12:35.857+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:12:35.887+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.157 seconds
+[2025-04-12T23:13:06.151+0000] {processor.py:186} INFO - Started process (PID=2662) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:13:06.153+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:13:06.157+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:13:06.157+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:13:06.178+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:13:06.220+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:13:06.220+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:13:06.269+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:13:06.269+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:13:06.298+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.154 seconds
+[2025-04-12T23:13:36.535+0000] {processor.py:186} INFO - Started process (PID=2672) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:13:36.537+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:13:36.540+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:13:36.540+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:13:36.557+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:13:36.595+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:13:36.595+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:13:36.636+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:13:36.635+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:13:36.661+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.135 seconds
+[2025-04-12T23:14:07.009+0000] {processor.py:186} INFO - Started process (PID=2683) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:14:07.011+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:14:07.014+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:14:07.014+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:14:07.036+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:14:07.081+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:14:07.080+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:14:07.127+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:14:07.127+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:14:07.309+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.307 seconds
+[2025-04-12T23:14:37.605+0000] {processor.py:186} INFO - Started process (PID=2693) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:14:37.606+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:14:37.609+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:14:37.609+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:14:37.628+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:14:37.666+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:14:37.666+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:14:37.867+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:14:37.867+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:14:37.892+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.294 seconds
+[2025-04-12T23:15:08.196+0000] {processor.py:186} INFO - Started process (PID=2703) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:15:08.197+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:15:08.201+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:15:08.200+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:15:08.219+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:15:08.258+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:15:08.257+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:15:08.299+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:15:08.299+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:15:08.326+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T23:15:38.617+0000] {processor.py:186} INFO - Started process (PID=2712) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:15:38.619+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:15:38.623+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:15:38.622+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:15:38.640+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:15:38.677+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:15:38.677+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:15:38.718+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:15:38.718+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:15:38.745+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.136 seconds
+[2025-04-12T23:16:09.029+0000] {processor.py:186} INFO - Started process (PID=2721) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:16:09.031+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:16:09.035+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:16:09.035+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:16:09.054+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:16:09.101+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:16:09.101+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:16:09.150+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:16:09.150+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:16:09.179+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.158 seconds
+[2025-04-12T23:16:39.468+0000] {processor.py:186} INFO - Started process (PID=2731) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:16:39.470+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:16:39.474+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:16:39.474+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:16:39.491+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:16:39.528+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:16:39.528+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:16:39.573+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:16:39.572+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:16:39.600+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.142 seconds
+[2025-04-12T23:17:09.905+0000] {processor.py:186} INFO - Started process (PID=2740) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:17:09.906+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:17:09.909+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:17:09.909+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:17:09.928+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:17:09.968+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:17:09.968+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:17:10.166+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:17:10.165+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:17:10.196+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.299 seconds
+[2025-04-12T23:17:40.511+0000] {processor.py:186} INFO - Started process (PID=2750) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:17:40.513+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:17:40.517+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:17:40.516+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:17:40.534+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:17:40.571+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:17:40.571+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:17:40.775+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:17:40.775+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:17:40.800+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.297 seconds
+[2025-04-12T23:18:11.066+0000] {processor.py:186} INFO - Started process (PID=2761) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:18:11.068+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:18:11.071+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:18:11.070+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:18:11.090+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:18:11.130+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:18:11.129+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:18:11.172+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:18:11.172+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:18:11.201+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.143 seconds
+[2025-04-12T23:18:41.510+0000] {processor.py:186} INFO - Started process (PID=2770) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:18:41.511+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:18:41.515+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:18:41.515+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:18:41.534+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:18:41.571+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:18:41.571+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:18:41.612+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:18:41.612+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:18:41.639+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T23:19:11.865+0000] {processor.py:186} INFO - Started process (PID=2779) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:19:11.867+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:19:11.871+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:19:11.871+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:19:11.894+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:19:11.941+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:19:11.940+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:19:11.992+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:19:11.992+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:19:12.023+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.168 seconds
+[2025-04-12T23:19:42.238+0000] {processor.py:186} INFO - Started process (PID=2789) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:19:42.241+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:19:42.251+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:19:42.251+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:19:42.273+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:19:42.324+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:19:42.324+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:19:42.387+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:19:42.387+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:19:42.564+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.334 seconds
+[2025-04-12T23:20:12.870+0000] {processor.py:186} INFO - Started process (PID=2799) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:20:12.871+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:20:12.876+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:20:12.875+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:20:12.895+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:20:12.936+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:20:12.936+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:20:13.124+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:20:13.124+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:20:13.156+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.294 seconds
+[2025-04-12T23:20:43.460+0000] {processor.py:186} INFO - Started process (PID=2810) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:20:43.462+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:20:43.464+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:20:43.464+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:20:43.482+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:20:43.522+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:20:43.521+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:20:43.721+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:20:43.721+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:20:43.747+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.296 seconds
+[2025-04-12T23:21:13.986+0000] {processor.py:186} INFO - Started process (PID=2820) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:21:13.988+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:21:13.991+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:21:13.990+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:21:14.007+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:21:14.044+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:21:14.044+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:21:14.086+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:21:14.086+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:21:14.113+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.134 seconds
+[2025-04-12T23:21:44.353+0000] {processor.py:186} INFO - Started process (PID=2829) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:21:44.354+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:21:44.357+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:21:44.357+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:21:44.375+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:21:44.414+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:21:44.413+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:21:44.455+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:21:44.455+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:21:44.483+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T23:22:14.716+0000] {processor.py:186} INFO - Started process (PID=2839) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:22:14.717+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:22:14.721+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:22:14.720+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:22:14.738+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:22:14.778+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:22:14.778+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:22:14.871+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:22:14.871+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:22:14.897+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.189 seconds
+[2025-04-12T23:22:45.145+0000] {processor.py:186} INFO - Started process (PID=2848) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:22:45.147+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:22:45.150+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:22:45.150+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:22:45.174+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:22:45.219+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:22:45.219+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:22:45.271+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:22:45.271+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:22:45.449+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.312 seconds
+[2025-04-12T23:23:15.690+0000] {processor.py:186} INFO - Started process (PID=2857) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:23:15.691+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:23:15.695+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:23:15.694+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:23:15.714+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:23:15.756+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:23:15.756+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:23:15.959+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:23:15.959+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:23:15.985+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.302 seconds
+[2025-04-12T23:23:46.226+0000] {processor.py:186} INFO - Started process (PID=2866) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:23:46.228+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:23:46.231+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:23:46.231+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:23:46.248+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:23:46.286+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:23:46.286+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:23:46.329+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:23:46.329+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:23:46.358+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T23:24:16.638+0000] {processor.py:186} INFO - Started process (PID=2875) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:24:16.640+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:24:16.644+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:24:16.644+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:24:16.662+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:24:16.699+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:24:16.698+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:24:16.738+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:24:16.738+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:24:16.763+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.132 seconds
+[2025-04-12T23:24:47.081+0000] {processor.py:186} INFO - Started process (PID=2885) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:24:47.082+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:24:47.085+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:24:47.085+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:24:47.104+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:24:47.143+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:24:47.142+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:24:47.189+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:24:47.189+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:24:47.226+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.153 seconds
+[2025-04-12T23:25:17.493+0000] {processor.py:186} INFO - Started process (PID=2895) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:25:17.495+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:25:17.498+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:25:17.497+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:25:17.515+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:25:17.551+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:25:17.551+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:25:17.593+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:25:17.593+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:25:17.771+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.285 seconds
+[2025-04-12T23:25:48.051+0000] {processor.py:186} INFO - Started process (PID=2905) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:25:48.052+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:25:48.055+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:25:48.055+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:25:48.072+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:25:48.113+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:25:48.113+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:25:48.312+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:25:48.312+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:25:48.345+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.302 seconds
+[2025-04-12T23:26:18.608+0000] {processor.py:186} INFO - Started process (PID=2916) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:26:18.610+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:26:18.613+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:26:18.613+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:26:18.631+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:26:18.674+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:26:18.674+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:26:18.893+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:26:18.892+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:26:18.925+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.324 seconds
+[2025-04-12T23:26:49.221+0000] {processor.py:186} INFO - Started process (PID=2926) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:26:49.222+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:26:49.225+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:26:49.225+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:26:49.244+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:26:49.289+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:26:49.289+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:26:49.337+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:26:49.337+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:26:49.372+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.161 seconds
+[2025-04-12T23:27:19.607+0000] {processor.py:186} INFO - Started process (PID=2935) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:27:19.609+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:27:19.613+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:27:19.613+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:27:19.633+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:27:19.676+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:27:19.675+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:27:19.725+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:27:19.725+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:27:19.755+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.157 seconds
+[2025-04-12T23:27:50.028+0000] {processor.py:186} INFO - Started process (PID=2944) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:27:50.030+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:27:50.033+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:27:50.033+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:27:50.049+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:27:50.091+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:27:50.091+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:27:50.136+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:27:50.135+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:27:50.164+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.144 seconds
+[2025-04-12T23:28:20.281+0000] {processor.py:186} INFO - Started process (PID=2953) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:28:20.283+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:28:20.288+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:28:20.288+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:28:20.311+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:28:20.355+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:28:20.355+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:28:20.426+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:28:20.425+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:28:20.625+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.355 seconds
+[2025-04-12T23:28:50.983+0000] {processor.py:186} INFO - Started process (PID=2963) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:28:50.984+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:28:50.987+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:28:50.987+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:28:51.012+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:28:51.056+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:28:51.055+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:28:51.256+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:28:51.256+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:28:51.283+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.310 seconds
+[2025-04-12T23:29:21.606+0000] {processor.py:186} INFO - Started process (PID=2972) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:29:21.609+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:29:21.613+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:29:21.612+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:29:21.636+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:29:21.814+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:29:21.814+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:29:21.869+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:29:21.869+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:29:21.899+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.301 seconds
+[2025-04-12T23:29:52.165+0000] {processor.py:186} INFO - Started process (PID=2982) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:29:52.167+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:29:52.171+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:29:52.170+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:29:52.189+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:29:52.386+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:29:52.385+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:29:52.430+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:29:52.430+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:29:52.460+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.302 seconds
+[2025-04-12T23:30:22.735+0000] {processor.py:186} INFO - Started process (PID=2991) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:30:22.737+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:30:22.741+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:30:22.741+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:30:22.760+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:30:22.796+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:30:22.796+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:30:22.844+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:30:22.843+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:30:22.874+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.149 seconds
+[2025-04-12T23:30:53.137+0000] {processor.py:186} INFO - Started process (PID=3001) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:30:53.139+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:30:53.143+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:30:53.142+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:30:53.162+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:30:53.205+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:30:53.204+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:30:53.254+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:30:53.253+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:30:53.286+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.156 seconds
+[2025-04-12T23:31:23.563+0000] {processor.py:186} INFO - Started process (PID=3011) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:31:23.565+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:31:23.568+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:31:23.568+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:31:23.587+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:31:23.627+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:31:23.627+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:31:23.676+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:31:23.676+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:31:23.845+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.290 seconds
+[2025-04-12T23:31:54.083+0000] {processor.py:186} INFO - Started process (PID=3020) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:31:54.085+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:31:54.089+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:31:54.088+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:31:54.106+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:31:54.148+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:31:54.148+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:31:54.349+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:31:54.349+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:31:54.375+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.299 seconds
+[2025-04-12T23:32:24.640+0000] {processor.py:186} INFO - Started process (PID=3030) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:32:24.642+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:32:24.646+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:32:24.645+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:32:24.665+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:32:24.708+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:32:24.708+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:32:24.755+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:32:24.755+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:32:24.788+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.155 seconds
+[2025-04-12T23:32:55.071+0000] {processor.py:186} INFO - Started process (PID=3039) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:32:55.073+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:32:55.076+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:32:55.076+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:32:55.091+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:32:55.128+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:32:55.127+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:32:55.171+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:32:55.170+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:32:55.197+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.134 seconds
+[2025-04-12T23:33:25.475+0000] {processor.py:186} INFO - Started process (PID=3048) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:33:25.477+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:33:25.480+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:33:25.480+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:33:25.497+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:33:25.538+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:33:25.538+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:33:25.579+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:33:25.579+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:33:25.606+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.139 seconds
+[2025-04-12T23:33:55.908+0000] {processor.py:186} INFO - Started process (PID=3058) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:33:55.911+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:33:55.914+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:33:55.914+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:33:55.934+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:33:55.972+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:33:55.972+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:33:56.017+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:33:56.017+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:33:56.184+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.283 seconds
+[2025-04-12T23:34:26.393+0000] {processor.py:186} INFO - Started process (PID=3069) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:34:26.395+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:34:26.399+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:34:26.398+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:34:26.420+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:34:26.478+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:34:26.478+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:34:26.677+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:34:26.677+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:34:26.706+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.321 seconds
+[2025-04-12T23:34:56.990+0000] {processor.py:186} INFO - Started process (PID=3078) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:34:56.992+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:34:56.996+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:34:56.995+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:34:57.013+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:34:57.054+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:34:57.054+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:34:57.231+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:34:57.231+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:34:57.258+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.275 seconds
+[2025-04-12T23:35:27.538+0000] {processor.py:186} INFO - Started process (PID=3088) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:35:27.540+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:35:27.545+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:35:27.544+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:35:27.561+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:35:27.603+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:35:27.602+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:35:27.649+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:35:27.648+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:35:27.679+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.149 seconds
+[2025-04-12T23:35:57.925+0000] {processor.py:186} INFO - Started process (PID=3097) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:35:57.927+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:35:57.932+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:35:57.932+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:35:57.951+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:35:58.001+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:35:58.000+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:35:58.053+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:35:58.053+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:35:58.097+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.182 seconds
+[2025-04-12T23:36:28.370+0000] {processor.py:186} INFO - Started process (PID=3106) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:36:28.372+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:36:28.375+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:36:28.375+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:36:28.393+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:36:28.438+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:36:28.437+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:36:28.483+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:36:28.483+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:36:28.516+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.154 seconds
+[2025-04-12T23:36:58.760+0000] {processor.py:186} INFO - Started process (PID=3115) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:36:58.762+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:36:58.765+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:36:58.764+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:36:58.783+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:36:58.821+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:36:58.821+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:36:58.863+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:36:58.863+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:36:59.049+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.296 seconds
+[2025-04-12T23:37:29.321+0000] {processor.py:186} INFO - Started process (PID=3125) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:37:29.323+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:37:29.326+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:37:29.326+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:37:29.350+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:37:29.399+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:37:29.398+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:37:29.599+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:37:29.599+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:37:29.625+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.311 seconds
+[2025-04-12T23:37:59.948+0000] {processor.py:186} INFO - Started process (PID=3135) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:37:59.949+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:37:59.953+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:37:59.953+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:37:59.974+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:38:00.178+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:38:00.178+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:38:00.223+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:38:00.223+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:38:00.254+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.314 seconds
+[2025-04-12T23:38:30.489+0000] {processor.py:186} INFO - Started process (PID=3145) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:38:30.490+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:38:30.493+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:38:30.493+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:38:30.510+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:38:30.552+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:38:30.552+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:38:30.599+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:38:30.599+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:38:30.629+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.148 seconds
+[2025-04-12T23:39:00.913+0000] {processor.py:186} INFO - Started process (PID=3154) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:39:00.914+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:39:00.919+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:39:00.918+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:39:00.936+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:39:00.975+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:39:00.975+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:39:01.018+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:39:01.017+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:39:01.046+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.140 seconds
+[2025-04-12T23:39:31.318+0000] {processor.py:186} INFO - Started process (PID=3164) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:39:31.320+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:39:31.324+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:39:31.324+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:39:31.341+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:39:31.380+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:39:31.380+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:39:31.430+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:39:31.430+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:39:31.457+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.148 seconds
+[2025-04-12T23:40:01.732+0000] {processor.py:186} INFO - Started process (PID=3173) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:40:01.734+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:40:01.738+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:40:01.738+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:40:01.756+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:40:01.794+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:40:01.793+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:40:02.001+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:40:02.001+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:40:02.032+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.309 seconds
+[2025-04-12T23:40:32.292+0000] {processor.py:186} INFO - Started process (PID=3183) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:40:32.294+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:40:32.297+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:40:32.296+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:40:32.314+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:40:32.362+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:40:32.361+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:40:32.539+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:40:32.539+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:40:32.566+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.281 seconds
+[2025-04-12T23:41:02.874+0000] {processor.py:186} INFO - Started process (PID=3194) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:41:02.876+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:41:02.879+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:41:02.879+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:41:02.896+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:41:03.077+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:41:03.077+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:41:03.122+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:41:03.122+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:41:03.152+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.285 seconds
+[2025-04-12T23:41:33.461+0000] {processor.py:186} INFO - Started process (PID=3205) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:41:33.463+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:41:33.466+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:41:33.466+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:41:33.485+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:41:33.522+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:41:33.522+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:41:33.564+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:41:33.564+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:41:33.592+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T23:42:03.837+0000] {processor.py:186} INFO - Started process (PID=3214) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:42:03.839+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:42:03.842+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:42:03.842+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:42:03.859+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:42:03.901+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:42:03.901+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:42:03.945+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:42:03.944+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:42:03.972+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.143 seconds
+[2025-04-12T23:42:34.196+0000] {processor.py:186} INFO - Started process (PID=3224) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:42:34.197+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:42:34.201+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:42:34.200+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:42:34.223+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:42:34.272+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:42:34.272+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:42:34.320+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:42:34.320+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:42:34.494+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.306 seconds
+[2025-04-12T23:43:04.809+0000] {processor.py:186} INFO - Started process (PID=3233) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:43:04.811+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:43:04.816+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:43:04.816+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:43:04.839+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:43:04.880+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:43:04.880+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:43:05.079+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:43:05.078+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:43:05.104+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.302 seconds
+[2025-04-12T23:43:35.348+0000] {processor.py:186} INFO - Started process (PID=3250) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:43:35.350+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:43:35.353+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:43:35.353+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:43:35.371+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:43:35.410+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:43:35.409+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:43:35.597+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:43:35.596+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:43:35.630+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.290 seconds
+[2025-04-12T23:44:05.945+0000] {processor.py:186} INFO - Started process (PID=3259) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:44:05.947+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:44:05.951+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:44:05.950+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:44:05.970+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:44:06.016+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:44:06.016+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:44:06.058+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:44:06.058+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:44:06.085+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.149 seconds
+[2025-04-12T23:44:36.344+0000] {processor.py:186} INFO - Started process (PID=3270) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:44:36.345+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:44:36.348+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:44:36.348+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:44:36.365+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:44:36.407+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:44:36.407+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:44:36.456+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:44:36.455+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:44:36.490+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.153 seconds
+[2025-04-12T23:45:06.717+0000] {processor.py:186} INFO - Started process (PID=3280) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:45:06.718+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:45:06.722+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:45:06.721+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:45:06.738+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:45:06.780+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:45:06.780+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:45:06.822+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:45:06.821+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:45:06.851+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.142 seconds
+[2025-04-12T23:45:37.119+0000] {processor.py:186} INFO - Started process (PID=3290) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:45:37.120+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:45:37.125+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:45:37.124+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:45:37.145+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:45:37.187+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:45:37.187+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:45:37.237+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:45:37.237+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:45:37.417+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.307 seconds
+[2025-04-12T23:46:07.712+0000] {processor.py:186} INFO - Started process (PID=3299) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:46:07.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:46:07.719+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:46:07.718+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:46:07.738+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:46:07.788+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:46:07.788+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:46:07.962+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:46:07.962+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:46:07.987+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.284 seconds
+[2025-04-12T23:46:38.258+0000] {processor.py:186} INFO - Started process (PID=3309) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:46:38.259+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:46:38.262+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:46:38.262+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:46:38.282+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:46:38.471+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:46:38.471+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:46:38.518+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:46:38.517+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:46:38.544+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.294 seconds
+[2025-04-12T23:47:08.814+0000] {processor.py:186} INFO - Started process (PID=3319) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:47:08.816+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:47:08.820+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:47:08.820+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:47:08.839+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:47:08.876+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:47:08.876+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:47:08.920+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:47:08.920+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:47:08.948+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.143 seconds
+[2025-04-12T23:47:39.197+0000] {processor.py:186} INFO - Started process (PID=3329) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:47:39.199+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:47:39.203+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:47:39.203+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:47:39.229+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:47:39.287+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:47:39.287+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:47:39.336+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:47:39.335+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:47:39.364+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.175 seconds
+[2025-04-12T23:48:09.626+0000] {processor.py:186} INFO - Started process (PID=3339) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:48:09.628+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:48:09.632+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:48:09.632+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:48:09.653+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:48:09.700+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:48:09.700+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:48:09.753+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:48:09.753+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:48:09.788+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.170 seconds
+[2025-04-12T23:48:40.097+0000] {processor.py:186} INFO - Started process (PID=3348) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:48:40.099+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:48:40.102+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:48:40.102+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:48:40.119+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:48:40.159+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:48:40.159+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:48:40.349+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:48:40.349+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:48:40.379+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.289 seconds
+[2025-04-12T23:49:10.614+0000] {processor.py:186} INFO - Started process (PID=3357) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:49:10.616+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:49:10.620+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:49:10.620+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:49:10.655+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:49:10.698+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:49:10.698+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:49:10.880+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:49:10.880+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:49:10.907+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.302 seconds
+[2025-04-12T23:49:41.213+0000] {processor.py:186} INFO - Started process (PID=3366) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:49:41.215+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:49:41.218+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:49:41.218+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:49:41.237+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:49:41.428+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:49:41.428+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:49:41.469+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:49:41.469+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:49:41.494+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.290 seconds
+[2025-04-12T23:50:11.800+0000] {processor.py:186} INFO - Started process (PID=3375) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:50:11.801+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:50:11.804+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:50:11.803+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:50:11.821+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:50:11.861+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:50:11.861+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:50:11.906+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:50:11.905+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:50:11.930+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.139 seconds
+[2025-04-12T23:50:42.170+0000] {processor.py:186} INFO - Started process (PID=3387) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:50:42.171+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:50:42.175+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:50:42.175+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:50:42.192+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:50:42.230+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:50:42.230+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:50:42.277+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:50:42.276+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:50:42.314+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.151 seconds
+[2025-04-12T23:51:12.592+0000] {processor.py:186} INFO - Started process (PID=3396) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:51:12.594+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:51:12.598+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:51:12.597+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:51:12.615+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:51:12.667+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:51:12.667+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:51:12.711+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:51:12.711+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:51:12.893+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.311 seconds
+[2025-04-12T23:51:43.144+0000] {processor.py:186} INFO - Started process (PID=3407) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:51:43.146+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:51:43.151+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:51:43.150+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:51:43.170+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:51:43.210+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:51:43.210+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:51:43.403+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:51:43.403+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:51:43.431+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.294 seconds
+[2025-04-12T23:52:13.713+0000] {processor.py:186} INFO - Started process (PID=3417) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:52:13.715+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:52:13.718+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:52:13.717+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:52:13.734+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:52:13.773+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:52:13.772+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:52:13.972+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:52:13.972+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:52:13.996+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.291 seconds
+[2025-04-12T23:52:44.239+0000] {processor.py:186} INFO - Started process (PID=3427) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:52:44.241+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:52:44.244+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:52:44.244+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:52:44.404+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:52:44.443+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:52:44.443+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:52:44.486+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:52:44.486+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:52:44.515+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.284 seconds
+[2025-04-12T23:53:15.029+0000] {processor.py:186} INFO - Started process (PID=3437) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:53:15.031+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:53:15.035+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:53:15.034+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:53:15.051+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:53:15.089+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:53:15.088+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:53:15.132+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:53:15.131+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:53:15.155+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.135 seconds
+[2025-04-12T23:53:45.361+0000] {processor.py:186} INFO - Started process (PID=3447) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:53:45.362+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:53:45.366+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:53:45.366+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:53:45.387+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:53:45.430+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:53:45.430+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:53:45.479+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:53:45.479+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:53:45.521+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.168 seconds
+[2025-04-12T23:54:15.821+0000] {processor.py:186} INFO - Started process (PID=3457) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:54:15.823+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:54:15.827+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:54:15.826+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:54:15.843+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:54:15.879+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:54:15.879+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:54:15.922+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:54:15.922+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:54:15.951+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.138 seconds
+[2025-04-12T23:54:46.196+0000] {processor.py:186} INFO - Started process (PID=3467) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:54:46.197+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:54:46.201+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:54:46.200+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:54:46.218+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:54:46.262+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:54:46.262+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:54:46.310+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:54:46.310+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:54:46.345+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.157 seconds
+[2025-04-12T23:55:16.625+0000] {processor.py:186} INFO - Started process (PID=3476) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:55:16.626+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:55:16.630+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:55:16.629+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:55:16.651+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:55:16.695+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:55:16.695+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:55:16.738+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:55:16.737+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:55:16.763+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.146 seconds
+[2025-04-12T23:55:46.891+0000] {processor.py:186} INFO - Started process (PID=3485) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:55:46.893+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:55:46.897+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:55:46.896+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:55:46.917+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:55:46.962+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:55:46.961+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:55:47.011+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:55:47.011+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:55:47.047+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.167 seconds
+[2025-04-12T23:56:17.401+0000] {processor.py:186} INFO - Started process (PID=3494) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:56:17.402+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:56:17.405+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:56:17.405+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:56:17.422+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:56:17.463+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:56:17.463+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:56:17.508+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:56:17.508+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:56:17.537+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.146 seconds
+[2025-04-12T23:56:47.845+0000] {processor.py:186} INFO - Started process (PID=3504) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:56:47.847+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:56:47.850+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:56:47.850+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:56:47.869+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:56:47.910+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:56:47.909+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:56:47.961+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:56:47.960+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:56:47.990+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.153 seconds
+[2025-04-12T23:57:18.317+0000] {processor.py:186} INFO - Started process (PID=3515) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:57:18.319+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:57:18.322+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:57:18.322+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:57:18.346+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:57:18.384+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:57:18.384+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:57:18.426+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:57:18.426+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:57:18.454+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.145 seconds
+[2025-04-12T23:57:48.710+0000] {processor.py:186} INFO - Started process (PID=3526) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:57:48.711+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:57:48.715+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:57:48.714+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:57:48.732+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:57:48.772+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:57:48.772+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:57:48.815+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:57:48.814+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:57:48.843+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.140 seconds
+[2025-04-12T23:58:19.121+0000] {processor.py:186} INFO - Started process (PID=3537) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:58:19.122+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:58:19.127+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:58:19.126+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:58:19.145+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:58:19.183+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:58:19.183+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:58:19.232+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:58:19.232+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:58:19.263+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.151 seconds
+[2025-04-12T23:58:49.564+0000] {processor.py:186} INFO - Started process (PID=3546) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:58:49.565+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:58:49.569+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:58:49.568+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:58:49.591+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:58:49.628+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:58:49.628+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:58:49.671+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:58:49.671+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:58:49.700+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.143 seconds
+[2025-04-12T23:59:20.078+0000] {processor.py:186} INFO - Started process (PID=3557) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:59:20.080+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:59:20.083+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:59:20.083+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:59:20.099+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:59:20.136+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:59:20.135+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:59:20.177+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:59:20.177+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:59:20.203+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.134 seconds
+[2025-04-12T23:59:50.508+0000] {processor.py:186} INFO - Started process (PID=3567) to work on /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:59:50.509+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/dag_teste2.py for tasks to queue
+[2025-04-12T23:59:50.512+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:59:50.512+0000] {dagbag.py:588} INFO - Filling up the DagBag from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:59:50.530+0000] {processor.py:925} INFO - DAG(s) 'crm-elastic-dag' retrieved from /opt/airflow/dags/dag_teste2.py
+[2025-04-12T23:59:50.569+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:59:50.569+0000] {dag.py:3239} INFO - Sync 1 DAGs
+[2025-04-12T23:59:50.618+0000] {logging_mixin.py:190} INFO - [2025-04-12T23:59:50.618+0000] {dag.py:4180} INFO - Setting next_dagrun for crm-elastic-dag to 2025-04-12 00:00:00+00:00, run_after=2025-04-13 00:00:00+00:00
+[2025-04-12T23:59:50.652+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/dag_teste2.py took 0.152 seconds

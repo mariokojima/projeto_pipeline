@@ -1,7 +1,6 @@
 from airflow import DAG
-from airflow.operators.python import PythonOperator
+from airflow.operators.bash import BashOperator
 from datetime import datetime
-import pandas as pd
 
 
 def generate_csv():
@@ -18,17 +17,17 @@ default_args = {
 }
 
 dag =  DAG(
-    'dag_gera_csv',
+    'pipeline_garrafa_stanley',
     default_args = default_args,
-    description = 'Teste Airflow',
+    description = 'Pipeline Mackenzie',
     schedule = None,
     catchup=False,
-    tags=['teste']
+    tags=['pipeline']
 )
 
-tsk_gera_csv = PythonOperator(
-    task_id = 'gera_csv',
-    python_callable = generate_csv,
+tsk_gera_csv = BashOperator(
+    task_id = 'scrap_magalu',
+    bash_command='scrapy runspider /opt/airflow/dags/scrap_magalu.py -O /opt/airflow/dags/sscrap_result.csv',
     dag=dag,
 )
 

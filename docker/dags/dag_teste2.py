@@ -1,7 +1,6 @@
 from airflow.models import DAG
 from airflow.operators.python_operator import PythonOperator
 from airflow.utils.dates import days_ago
-from includes.test import hello
 
 #https://www.youtube.com/watch?v=IsWfoXY_Duk
 
