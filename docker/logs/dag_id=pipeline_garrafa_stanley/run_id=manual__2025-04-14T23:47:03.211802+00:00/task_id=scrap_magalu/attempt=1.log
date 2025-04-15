@@ -1,0 +1,679 @@
+[2025-04-14T23:47:07.496+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-14T23:47:07.585+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_garrafa_stanley.scrap_magalu manual__2025-04-14T23:47:03.211802+00:00 [queued]>
+[2025-04-14T23:47:07.614+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_garrafa_stanley.scrap_magalu manual__2025-04-14T23:47:03.211802+00:00 [queued]>
+[2025-04-14T23:47:07.616+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-14T23:47:07.675+0000] {taskinstance.py:2890} INFO - Executing <Task(BashOperator): scrap_magalu> on 2025-04-14 23:47:03.211802+00:00
+[2025-04-14T23:47:07.701+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=3103) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-14T23:47:07.706+0000] {standard_task_runner.py:72} INFO - Started process 3105 to run task
+[2025-04-14T23:47:07.732+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'pipeline_garrafa_stanley', 'scrap_magalu', 'manual__2025-04-14T23:47:03.211802+00:00', '--job-id', '102', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp_gwwfcsl']
+[2025-04-14T23:47:07.743+0000] {standard_task_runner.py:105} INFO - Job 102: Subtask scrap_magalu
+[2025-04-14T23:47:08.011+0000] {task_command.py:467} INFO - Running <TaskInstance: pipeline_garrafa_stanley.scrap_magalu manual__2025-04-14T23:47:03.211802+00:00 [running]> on host a68e7f38875d
+[2025-04-14T23:47:08.450+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='Mário Kojima' AIRFLOW_CTX_DAG_ID='pipeline_garrafa_stanley' AIRFLOW_CTX_TASK_ID='scrap_magalu' AIRFLOW_CTX_EXECUTION_DATE='2025-04-14T23:47:03.211802+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-14T23:47:03.211802+00:00'
+[2025-04-14T23:47:08.454+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-14T23:47:08.499+0000] {subprocess.py:78} INFO - Tmp dir root location: /tmp
+[2025-04-14T23:47:08.503+0000] {subprocess.py:88} INFO - Running command: ['/usr/bin/bash', '-c', 'scrapy runspider /opt/***/dags/scrap_magalu.py -O /opt/***/dags/scrap_result.csv']
+[2025-04-14T23:47:08.531+0000] {subprocess.py:99} INFO - Output:
+[2025-04-14T23:47:11.560+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:11 [scrapy.utils.log] INFO: Scrapy 2.12.0 started (bot: scrapybot)
+[2025-04-14T23:47:11.566+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:11 [scrapy.utils.log] INFO: Versions: lxml 5.3.0.0, libxml2 2.12.9, cssselect 1.3.0, parsel 1.10.0, w3lib 2.3.1, Twisted 24.11.0, Python 3.12.9 (main, Feb  6 2025, 22:37:05) [GCC 12.2.0], pyOpenSSL 24.3.0 (OpenSSL 3.2.2 4 Jun 2024), cryptography 42.0.8, Platform Linux-5.10.76-linuxkit-x86_64-with-glibc2.36
+[2025-04-14T23:47:11.580+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:11 [scrapy.addons] INFO: Enabled addons:
+[2025-04-14T23:47:11.584+0000] {subprocess.py:106} INFO - []
+[2025-04-14T23:47:11.587+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:11 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.epollreactor.EPollReactor
+[2025-04-14T23:47:11.593+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:11 [scrapy.extensions.telnet] INFO: Telnet Password: 95f96f1b56490ce7
+[2025-04-14T23:47:11.726+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:11 [scrapy.middleware] INFO: Enabled extensions:
+[2025-04-14T23:47:11.730+0000] {subprocess.py:106} INFO - ['scrapy.extensions.corestats.CoreStats',
+[2025-04-14T23:47:11.733+0000] {subprocess.py:106} INFO -  'scrapy.extensions.telnet.TelnetConsole',
+[2025-04-14T23:47:11.739+0000] {subprocess.py:106} INFO -  'scrapy.extensions.memusage.MemoryUsage',
+[2025-04-14T23:47:11.744+0000] {subprocess.py:106} INFO -  'scrapy.extensions.feedexport.FeedExporter',
+[2025-04-14T23:47:11.748+0000] {subprocess.py:106} INFO -  'scrapy.extensions.logstats.LogStats']
+[2025-04-14T23:47:11.755+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:11 [scrapy.crawler] INFO: Overridden settings:
+[2025-04-14T23:47:11.760+0000] {subprocess.py:106} INFO - {'SPIDER_LOADER_WARN_ONLY': True,
+[2025-04-14T23:47:11.766+0000] {subprocess.py:106} INFO -  'USER_AGENT': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, '
+[2025-04-14T23:47:11.772+0000] {subprocess.py:106} INFO -                'like Gecko) Chrome/51.0.2704.103 Safari/537.36'}
+[2025-04-14T23:47:12.107+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:12 [scrapy.middleware] INFO: Enabled downloader middlewares:
+[2025-04-14T23:47:12.111+0000] {subprocess.py:106} INFO - ['scrapy.downloadermiddlewares.offsite.OffsiteMiddleware',
+[2025-04-14T23:47:12.117+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+[2025-04-14T23:47:12.124+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+[2025-04-14T23:47:12.128+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+[2025-04-14T23:47:12.131+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+[2025-04-14T23:47:12.135+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+[2025-04-14T23:47:12.141+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+[2025-04-14T23:47:12.146+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+[2025-04-14T23:47:12.149+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+[2025-04-14T23:47:12.156+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+[2025-04-14T23:47:12.162+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+[2025-04-14T23:47:12.165+0000] {subprocess.py:106} INFO -  'scrapy.downloadermiddlewares.stats.DownloaderStats']
+[2025-04-14T23:47:12.168+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:12 [scrapy.middleware] INFO: Enabled spider middlewares:
+[2025-04-14T23:47:12.171+0000] {subprocess.py:106} INFO - ['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+[2025-04-14T23:47:12.173+0000] {subprocess.py:106} INFO -  'scrapy.spidermiddlewares.referer.RefererMiddleware',
+[2025-04-14T23:47:12.176+0000] {subprocess.py:106} INFO -  'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+[2025-04-14T23:47:12.179+0000] {subprocess.py:106} INFO -  'scrapy.spidermiddlewares.depth.DepthMiddleware']
+[2025-04-14T23:47:12.181+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:12 [scrapy.middleware] INFO: Enabled item pipelines:
+[2025-04-14T23:47:12.186+0000] {subprocess.py:106} INFO - []
+[2025-04-14T23:47:12.189+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:12 [scrapy.core.engine] INFO: Spider opened
+[2025-04-14T23:47:12.195+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:12 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+[2025-04-14T23:47:12.199+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:12 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+[2025-04-14T23:47:13.950+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1> (referer: None)
+[2025-04-14T23:47:15.768+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1> (referer: https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1)
+[2025-04-14T23:47:15.924+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.927+0000] {subprocess.py:106} INFO - {'title': 'GARRAFA STANLEY AEROLIGHT FAST FLOW 1.1Lt ORIGINAL TODAS AS CORES', 'price': 'R$\xa0332,00', 'review': '4.2 (6)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.941+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.944+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley aerolight fast flow 710ml original todas as cores', 'price': 'R$\xa0304,10', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.946+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.949+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Matte Black', 'price': 'R$\xa0287,37', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.951+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.953+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Lavender 710ML - STANLEY PMI', 'price': 'R$\xa0289,97', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.956+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.958+0000] {subprocess.py:106} INFO - {'title': 'Stanley Garrafa Térmica Aerolight Original Fast Flow Branco Polar 710ml', 'price': 'R$\xa0332,10', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.960+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.964+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Tigerlily', 'price': 'R$\xa0315,27', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.968+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.971+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 1.1L Pink', 'price': 'R$\xa0289,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.975+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.977+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Matte Black 1,1L Stanley', 'price': 'R$\xa0351,23', 'review': '4.2 (6)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.980+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.982+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Matte Black 710ML', 'price': 'R$\xa0272,49', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.985+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.988+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Lavender', 'price': 'R$\xa0287,37', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:15.991+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:15.999+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 1,1 Litros', 'price': 'R$\xa0299,46', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.001+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.005+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Citron', 'price': 'R$\xa0315,27', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.008+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.011+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Polar', 'price': 'R$\xa0315,27', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.015+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.018+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Citron 710ML', 'price': 'R$\xa0272,49', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.021+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.024+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Original Laranja Tigerlily 1,1 L', 'price': 'R$\xa0379,00', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.026+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.029+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Laranja Fast Flow Tigerlily 1,1L Stanley', 'price': 'R$\xa0344,01', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.032+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.034+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml lavender 08241-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.036+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.041+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow 1,1 litros laranja tigerlily 08242-00', 'price': 'R$\xa0343,17', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.043+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.046+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Rosa Claro', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.048+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.051+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 1.1L Verde Água', 'price': 'R$\xa0289,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.055+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.057+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 1,1 Litros - STANLEY PMI', 'price': 'R$\xa0399,00', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.060+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.063+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Matte Black 710ML - STANLEY PMI', 'price': 'R$\xa0365,00', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.066+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.068+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml laranja tigerlily 08204-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.071+0000] {subprocess.py:106} INFO - **************************************************
+[2025-04-14T23:47:16.075+0000] {subprocess.py:106} INFO - 2
+[2025-04-14T23:47:16.078+0000] {subprocess.py:106} INFO - **************************************************
+[2025-04-14T23:47:16.080+0000] {subprocess.py:106} INFO - https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1
+[2025-04-14T23:47:16.083+0000] {subprocess.py:106} INFO - blocos
+[2025-04-14T23:47:16.086+0000] {subprocess.py:106} INFO - [<Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>]
+[2025-04-14T23:47:16.090+0000] {subprocess.py:106} INFO - GARRAFA STANLEY AEROLIGHT FAST FLOW 1.1Lt ORIGINAL TODAS AS CORES
+[2025-04-14T23:47:16.093+0000] {subprocess.py:106} INFO - [R$ 332,00]
+[2025-04-14T23:47:16.095+0000] {subprocess.py:106} INFO - 4.2 (6)
+[2025-04-14T23:47:16.098+0000] {subprocess.py:106} INFO - Garrafa stanley aerolight fast flow 710ml original todas as cores
+[2025-04-14T23:47:16.103+0000] {subprocess.py:106} INFO - [R$ 304,10]
+[2025-04-14T23:47:16.106+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.109+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Matte Black
+[2025-04-14T23:47:16.112+0000] {subprocess.py:106} INFO - [R$ 287,37]
+[2025-04-14T23:47:16.115+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.118+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Lavender 710ML - STANLEY PMI
+[2025-04-14T23:47:16.121+0000] {subprocess.py:106} INFO - [R$ 289,97]
+[2025-04-14T23:47:16.124+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.126+0000] {subprocess.py:106} INFO - Stanley Garrafa Térmica Aerolight Original Fast Flow Branco Polar 710ml
+[2025-04-14T23:47:16.129+0000] {subprocess.py:106} INFO - [R$ 332,10]
+[2025-04-14T23:47:16.132+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.134+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Tigerlily
+[2025-04-14T23:47:16.137+0000] {subprocess.py:106} INFO - [R$ 315,27]
+[2025-04-14T23:47:16.141+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.143+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 1.1L Pink
+[2025-04-14T23:47:16.146+0000] {subprocess.py:106} INFO - [R$ 289,23]
+[2025-04-14T23:47:16.149+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.152+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Matte Black 1,1L Stanley
+[2025-04-14T23:47:16.155+0000] {subprocess.py:106} INFO - [R$ 351,23]
+[2025-04-14T23:47:16.158+0000] {subprocess.py:106} INFO - 4.2 (6)
+[2025-04-14T23:47:16.162+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Matte Black 710ML
+[2025-04-14T23:47:16.166+0000] {subprocess.py:106} INFO - [R$ 272,49]
+[2025-04-14T23:47:16.169+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.173+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Lavender
+[2025-04-14T23:47:16.176+0000] {subprocess.py:106} INFO - [R$ 287,37]
+[2025-04-14T23:47:16.179+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.182+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 1,1 Litros
+[2025-04-14T23:47:16.185+0000] {subprocess.py:106} INFO - [R$ 299,46]
+[2025-04-14T23:47:16.188+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.190+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Citron
+[2025-04-14T23:47:16.193+0000] {subprocess.py:106} INFO - [R$ 315,27]
+[2025-04-14T23:47:16.196+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.199+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Polar
+[2025-04-14T23:47:16.202+0000] {subprocess.py:106} INFO - [R$ 315,27]
+[2025-04-14T23:47:16.207+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.210+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Citron 710ML
+[2025-04-14T23:47:16.213+0000] {subprocess.py:106} INFO - [R$ 272,49]
+[2025-04-14T23:47:16.217+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.223+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Original Laranja Tigerlily 1,1 L
+[2025-04-14T23:47:16.229+0000] {subprocess.py:106} INFO - [R$ 379,00]
+[2025-04-14T23:47:16.232+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.235+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Laranja Fast Flow Tigerlily 1,1L Stanley
+[2025-04-14T23:47:16.237+0000] {subprocess.py:106} INFO - [R$ 344,01]
+[2025-04-14T23:47:16.241+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.243+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml lavender 08241-00
+[2025-04-14T23:47:16.246+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:16.249+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.251+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow 1,1 litros laranja tigerlily 08242-00
+[2025-04-14T23:47:16.255+0000] {subprocess.py:106} INFO - [R$ 343,17]
+[2025-04-14T23:47:16.257+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.260+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Rosa Claro
+[2025-04-14T23:47:16.263+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:16.266+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.269+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 1.1L Verde Água
+[2025-04-14T23:47:16.273+0000] {subprocess.py:106} INFO - [R$ 289,23]
+[2025-04-14T23:47:16.276+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.278+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 1,1 Litros - STANLEY PMI
+[2025-04-14T23:47:16.281+0000] {subprocess.py:106} INFO - [R$ 399,00]
+[2025-04-14T23:47:16.283+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.286+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Matte Black 710ML - STANLEY PMI
+[2025-04-14T23:47:16.289+0000] {subprocess.py:106} INFO - [R$ 365,00]
+[2025-04-14T23:47:16.291+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.294+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml laranja tigerlily 08204-00
+[2025-04-14T23:47:16.296+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:16.299+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.303+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml vivid violet 08405-002025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.306+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml vivid violet 08405-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.309+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.311+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Lilás', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.314+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.317+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 1,1 Litros - STANLEY PMI', 'price': 'R$\xa0385,90', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.321+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.324+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710 ML Azul 0838', 'price': 'R$\xa0369,90', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.326+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.330+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow 1,1 litros branco polar 08207-00', 'price': 'R$\xa0343,17', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.333+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.335+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Azul Claro', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.339+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.342+0000] {subprocess.py:106} INFO - {'title': 'Garrafa termica stanley aerolight fast flow tigerlily 1,1l cod8208 cx6', 'price': 'R$\xa0434,37', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.345+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.348+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 710', 'price': 'R$\xa0361,00', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.351+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.401+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley IceFlow Aerolight Fast Flow 700ml - Cinza', 'price': 'R$\xa0448,45', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.408+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.414+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica STanley Aerolight Fast Flow 1,1L', 'price': 'R$\xa0368,18', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.425+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.433+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI', 'price': 'R$\xa0359,43', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.440+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.446+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow 1,1L Polar Stanley', 'price': 'R$\xa0379,00', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.456+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.463+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Tigerlily 710ml Stanley', 'price': 'R$\xa0289,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.470+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.474+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml azul tropical teal 08406-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.477+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.479+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI', 'price': 'R$\xa0385,90', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.482+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.487+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Água', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.490+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.493+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Stanley 710ML', 'price': 'R$\xa0359,91', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.497+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.500+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Polar 1,1L Stanley', 'price': 'R$\xa0351,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.503+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.509+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Citron 710ML - STANLEY PMI', 'price': 'R$\xa0419,90', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.514+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.528+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Heat Wave Passion Pink 710ML Stanley', 'price': 'R$\xa0306,81', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.536+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.546+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml passion pink 08404-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.549+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.552+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica STanley Aerolight Fast Flow 1,1L', 'price': 'R$\xa0368,18', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.555+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.557+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI', 'price': 'R$\xa0371,07', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.561+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.565+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow 710ml matte black 08202-00', 'price': 'R$\xa0324,57', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.568+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.570+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Limão', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.573+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.577+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 710ML - STANLEY PMI', 'price': 'R$\xa0369,90', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.580+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.582+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Stanley Citron 710 Ml', 'price': 'R$\xa0365,00', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.586+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.588+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI', 'price': 'R$\xa0489,00', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.593+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.598+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 0.7L Verde 08205', 'price': 'R$\xa0344,01', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.602+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.606+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmico Aerolight Fast Flow 710 Ml Citron Stanley', 'price': 'R$\xa0329,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.611+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.616+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Polar 1,1L', 'price': 'R$\xa0479,99', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.620+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=1>
+[2025-04-14T23:47:16.622+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Lavender 710ML - STANLEY PMI', 'price': 'R$\xa0361,77', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.625+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2> (referer: https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1)
+[2025-04-14T23:47:16.627+0000] {subprocess.py:106} INFO - 
+[2025-04-14T23:47:16.630+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:16.633+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.636+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Lilás
+[2025-04-14T23:47:16.640+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:16.642+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.645+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 1,1 Litros - STANLEY PMI
+[2025-04-14T23:47:16.647+0000] {subprocess.py:106} INFO - [R$ 385,90]
+[2025-04-14T23:47:16.650+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.652+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710 ML Azul 0838
+[2025-04-14T23:47:16.655+0000] {subprocess.py:106} INFO - [R$ 369,90]
+[2025-04-14T23:47:16.660+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.663+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow 1,1 litros branco polar 08207-00
+[2025-04-14T23:47:16.666+0000] {subprocess.py:106} INFO - [R$ 343,17]
+[2025-04-14T23:47:16.669+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.672+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Azul Claro
+[2025-04-14T23:47:16.675+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:16.677+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.679+0000] {subprocess.py:106} INFO - Garrafa termica stanley aerolight fast flow tigerlily 1,1l cod8208 cx6
+[2025-04-14T23:47:16.682+0000] {subprocess.py:106} INFO - [R$ 434,37]
+[2025-04-14T23:47:16.685+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.688+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 710
+[2025-04-14T23:47:16.690+0000] {subprocess.py:106} INFO - [R$ 361,00]
+[2025-04-14T23:47:16.693+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.697+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley IceFlow Aerolight Fast Flow 700ml - Cinza
+[2025-04-14T23:47:16.701+0000] {subprocess.py:106} INFO - [R$ 448,45]
+[2025-04-14T23:47:16.705+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.709+0000] {subprocess.py:106} INFO - Garrafa Térmica STanley Aerolight Fast Flow 1,1L
+[2025-04-14T23:47:16.712+0000] {subprocess.py:106} INFO - [R$ 368,18]
+[2025-04-14T23:47:16.715+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.718+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI
+[2025-04-14T23:47:16.721+0000] {subprocess.py:106} INFO - [R$ 359,43]
+[2025-04-14T23:47:16.724+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.727+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow 1,1L Polar Stanley
+[2025-04-14T23:47:16.730+0000] {subprocess.py:106} INFO - [R$ 379,00]
+[2025-04-14T23:47:16.732+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.735+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Tigerlily 710ml Stanley
+[2025-04-14T23:47:16.738+0000] {subprocess.py:106} INFO - [R$ 289,23]
+[2025-04-14T23:47:16.741+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.744+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml azul tropical teal 08406-00
+[2025-04-14T23:47:16.747+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:16.749+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.752+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI
+[2025-04-14T23:47:16.755+0000] {subprocess.py:106} INFO - [R$ 385,90]
+[2025-04-14T23:47:16.757+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.760+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Água
+[2025-04-14T23:47:16.764+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:16.766+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.769+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Stanley 710ML
+[2025-04-14T23:47:16.772+0000] {subprocess.py:106} INFO - [R$ 359,91]
+[2025-04-14T23:47:16.775+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.778+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Polar 1,1L Stanley
+[2025-04-14T23:47:16.780+0000] {subprocess.py:106} INFO - [R$ 351,23]
+[2025-04-14T23:47:16.783+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.785+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Citron 710ML - STANLEY PMI
+[2025-04-14T23:47:16.788+0000] {subprocess.py:106} INFO - [R$ 419,90]
+[2025-04-14T23:47:16.793+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.797+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Heat Wave Passion Pink 710ML Stanley
+[2025-04-14T23:47:16.799+0000] {subprocess.py:106} INFO - [R$ 306,81]
+[2025-04-14T23:47:16.804+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.807+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml passion pink 08404-00
+[2025-04-14T23:47:16.811+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:16.814+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.817+0000] {subprocess.py:106} INFO - Garrafa Térmica STanley Aerolight Fast Flow 1,1L
+[2025-04-14T23:47:16.819+0000] {subprocess.py:106} INFO - [R$ 368,18]
+[2025-04-14T23:47:16.822+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.825+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI
+[2025-04-14T23:47:16.828+0000] {subprocess.py:106} INFO - [R$ 371,07]
+[2025-04-14T23:47:16.831+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.834+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow 710ml matte black 08202-00
+[2025-04-14T23:47:16.837+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:16.841+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:16.843+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Limão
+[2025-04-14T23:47:16.846+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:16.850+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.852+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 710ML - STANLEY PMI
+[2025-04-14T23:47:16.855+0000] {subprocess.py:106} INFO - [R$ 369,90]
+[2025-04-14T23:47:16.858+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.861+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Stanley Citron 710 Ml
+[2025-04-14T23:47:16.864+0000] {subprocess.py:106} INFO - [R$ 365,00]
+[2025-04-14T23:47:16.867+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.870+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI
+[2025-04-14T23:47:16.873+0000] {subprocess.py:106} INFO - [R$ 489,00]
+[2025-04-14T23:47:16.876+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.880+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 0.7L Verde 08205
+[2025-04-14T23:47:16.883+0000] {subprocess.py:106} INFO - [R$ 344,01]
+[2025-04-14T23:47:16.886+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.888+0000] {subprocess.py:106} INFO - Garrafa Térmico Aerolight Fast Flow 710 Ml Citron Stanley
+[2025-04-14T23:47:16.892+0000] {subprocess.py:106} INFO - [R$ 329,57]
+[2025-04-14T23:47:16.894+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.897+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Polar 1,1L
+[2025-04-14T23:47:16.899+0000] {subprocess.py:106} INFO - [R$ 479,99]
+[2025-04-14T23:47:16.902+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.906+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Lavender 710ML - STANLEY PMI
+[2025-04-14T23:47:16.909+0000] {subprocess.py:106} INFO - [R$ 361,77]
+[2025-04-14T23:47:16.912+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:16.915+0000] {subprocess.py:106} INFO - https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2
+[2025-04-14T23:47:16.918+0000] {subprocess.py:106} INFO - blocos
+[2025-04-14T23:47:16.921+0000] {subprocess.py:106} INFO - [<Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>, <Selector query='//div[@data-testid="product-list"]//li' data='<li class="sc-hwhrDX ghzctf"><a href=...'>]2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.926+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Matte Black', 'price': 'R$\xa0287,37', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.929+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.932+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Matte Black 710ML', 'price': 'R$\xa0272,49', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.935+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.937+0000] {subprocess.py:106} INFO - {'title': 'GARRAFA STANLEY AEROLIGHT FAST FLOW 1.1Lt ORIGINAL TODAS AS CORES', 'price': 'R$\xa0332,00', 'review': '4.2 (6)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.942+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.944+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Lavender 710ML - STANLEY PMI', 'price': 'R$\xa0289,97', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.947+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.949+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley aerolight fast flow 710ml original todas as cores', 'price': 'R$\xa0304,10', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.952+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.955+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Matte Black 1,1L Stanley', 'price': 'R$\xa0351,23', 'review': '4.2 (6)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.960+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.963+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Citron', 'price': 'R$\xa0315,27', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.967+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.970+0000] {subprocess.py:106} INFO - {'title': 'Stanley Garrafa Térmica Aerolight Original Fast Flow Branco Polar 710ml', 'price': 'R$\xa0332,10', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.973+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.976+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Lavender', 'price': 'R$\xa0287,37', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.979+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.987+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Azul Claro', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:16.990+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:16.996+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Tigerlily', 'price': 'R$\xa0315,27', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.001+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.004+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 1.1L Pink', 'price': 'R$\xa0289,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.008+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.010+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Polar', 'price': 'R$\xa0315,27', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.013+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.015+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 1,1 Litros', 'price': 'R$\xa0299,46', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.018+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.020+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Água', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.023+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.028+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow 1,1 litros laranja tigerlily 08242-00', 'price': 'R$\xa0343,17', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.031+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.033+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Citron 710ML', 'price': 'R$\xa0272,49', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.036+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.039+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow 1,1 litros verde citron 08208-00', 'price': 'R$\xa0343,17', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.041+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.044+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI', 'price': 'R$\xa0359,43', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.046+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.049+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow 1,1 litros branco polar 08207-00', 'price': 'R$\xa0343,17', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.052+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.055+0000] {subprocess.py:106} INFO - {'title': 'Garrafa termica aerolight flast flow polar 1,1l stanley', 'price': 'R$\xa0378,51', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.057+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.060+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Menta', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.062+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.065+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Limão', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.068+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.070+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Lilás', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.074+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.077+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Rosa Claro', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.083+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.089+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Termica Stanley 710ml Aerolight Fast Flow Original', 'price': 'R$\xa0298,63', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.091+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.094+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Tigerlily', 'price': 'R$\xa0287,37', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.096+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.099+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Flow - 710ml', 'price': 'R$\xa0313,41', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.101+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.106+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml lavender 08241-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.111+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.115+0000] {subprocess.py:106} INFO - {'title': 'Garrafa termica aerolight flast flow black 710ml stanley', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.120+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.125+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow 1,1L - Stanley', 'price': 'R$\xa0487,00', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.129+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.136+0000] {subprocess.py:106} INFO - {'title': 'Garrafa termica aerolight flast flow polar 710ml stanley', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.140+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.145+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow 1,1 litros azul tropical teal 08408-00', 'price': 'R$\xa0343,17', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.147+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.151+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Tigerlily 710ml Stanley', 'price': 'R$\xa0289,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.156+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.162+0000] {subprocess.py:106} INFO - {'title': 'Garrafa termica aerolight flast flow citron 1,1l stanley', 'price': 'R$\xa0378,51', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.172+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.177+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710 ML Azul 0838', 'price': 'R$\xa0369,90', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.183+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.186+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Heat Wave Passion Pink 710ML Stanley', 'price': 'R$\xa0306,81', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.190+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.192+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Laranja Fast Flow Tigerlily 1,1L Stanley', 'price': 'R$\xa0344,01', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.197+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.205+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 1.1L Verde Água', 'price': 'R$\xa0289,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.209+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.213+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow 1,1 litros rosa vivid violet 08407-00', 'price': 'R$\xa0343,17', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.216+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.219+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica STanley Aerolight Fast Flow 1,1L', 'price': 'R$\xa0368,18', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.222+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.224+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml passion pink 08404-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.227+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.231+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml azul tropical teal 08406-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.234+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.236+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Stanley Citron 710 Ml', 'price': 'R$\xa0365,00', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.240+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.244+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml laranja tigerlily 08204-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.249+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.262+0000] {subprocess.py:106} INFO - {'title': 'Garrafa stanley térmica aerolight fast flow em aço inox 710ml vivid violet 08405-00', 'price': 'R$\xa0324,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.275+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.282+0000] {subprocess.py:106} INFO - {'title': 'Garrafa termica aerolight flast flow black 1,1l stanley', 'price': 'R$\xa0378,51', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.288+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.297+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Citron 710ml Stanley', 'price': 'R$\xa0289,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.304+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.309+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Heat Wave Rose Quartz Glow 710ML Stanley', 'price': 'R$\xa0306,81', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.315+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.320+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI', 'price': 'R$\xa0371,07', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.326+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.331+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Lavender 710ML - STANLEY PMI', 'price': 'R$\xa0361,77', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.335+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.343+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Stanley 710ML', 'price': 'R$\xa0359,91', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.347+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.350+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow 710ml Laranja', 'price': 'R$\xa0268,57', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.354+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.357+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Polar 1,1L Stanley', 'price': 'R$\xa0351,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.360+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.367+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 710ML - STANLEY PMI', 'price': 'R$\xa0361,77', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.370+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.374+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley Aerolight Fast Flow Original Laranja Tigerlily 1,1 L', 'price': 'R$\xa0379,00', 'review': '5.0 (1)', 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.378+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.382+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow Polar 710ml Stanley', 'price': 'R$\xa0289,23', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.385+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.388+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Stanley IceFlow Aerolight Fast Flow 700ml - Cinza', 'price': 'R$\xa0448,45', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.391+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.394+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow 1,1L Tropical Teal Stanley', 'price': 'R$\xa0395,00', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.398+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://www.magazineluiza.com.br/busca/garrafa+stanley+aerolight+fast+flow/?page=1?page=2>
+[2025-04-14T23:47:17.401+0000] {subprocess.py:106} INFO - {'title': 'Garrafa Térmica Aerolight Fast Flow 1,1L Polar Stanley', 'price': 'R$\xa0379,00', 'review': None, 'store': 'Magazine Luiza'}
+[2025-04-14T23:47:17.403+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.engine] INFO: Closing spider (finished)
+[2025-04-14T23:47:17.407+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.extensions.feedexport] INFO: Stored csv feed (115 items) in: /opt/***/dags/scrap_result.csv
+[2025-04-14T23:47:17.411+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+[2025-04-14T23:47:17.414+0000] {subprocess.py:106} INFO - {'downloader/request_bytes': 2450,
+[2025-04-14T23:47:17.417+0000] {subprocess.py:106} INFO -  'downloader/request_count': 3,
+[2025-04-14T23:47:17.420+0000] {subprocess.py:106} INFO -  'downloader/request_method_count/GET': 3,
+[2025-04-14T23:47:17.423+0000] {subprocess.py:106} INFO -  'downloader/response_bytes': 285502,
+[2025-04-14T23:47:17.427+0000] {subprocess.py:106} INFO -  'downloader/response_count': 3,
+[2025-04-14T23:47:17.432+0000] {subprocess.py:106} INFO -  'downloader/response_status_count/200': 3,
+[2025-04-14T23:47:17.436+0000] {subprocess.py:106} INFO -  'elapsed_time_seconds': 4.40859,
+[2025-04-14T23:47:17.439+0000] {subprocess.py:106} INFO -  'feedexport/success_count/FileFeedStorage': 1,
+[2025-04-14T23:47:17.442+0000] {subprocess.py:106} INFO -  'finish_reason': 'finished',
+[2025-04-14T23:47:17.445+0000] {subprocess.py:106} INFO -  'finish_time': datetime.datetime(2025, 4, 14, 23, 47, 16, 537402, tzinfo=datetime.timezone.utc),
+[2025-04-14T23:47:17.449+0000] {subprocess.py:106} INFO -  'httpcompression/response_bytes': 2127870,
+[2025-04-14T23:47:17.452+0000] {subprocess.py:106} INFO -  'httpcompression/response_count': 3,
+[2025-04-14T23:47:17.455+0000] {subprocess.py:106} INFO -  'item_scraped_count': 115,
+[2025-04-14T23:47:17.462+0000] {subprocess.py:106} INFO -  'items_per_minute': None,
+[2025-04-14T23:47:17.468+0000] {subprocess.py:106} INFO -  'log_count/DEBUG': 119,
+[2025-04-14T23:47:17.472+0000] {subprocess.py:106} INFO -  'log_count/INFO': 11,
+[2025-04-14T23:47:17.476+0000] {subprocess.py:106} INFO -  'memusage/max': 218750976,
+[2025-04-14T23:47:17.480+0000] {subprocess.py:106} INFO -  'memusage/startup': 218750976,
+[2025-04-14T23:47:17.484+0000] {subprocess.py:106} INFO -  'request_depth_max': 1,
+[2025-04-14T23:47:17.488+0000] {subprocess.py:106} INFO -  'response_received_count': 3,
+[2025-04-14T23:47:17.491+0000] {subprocess.py:106} INFO -  'responses_per_minute': None,
+[2025-04-14T23:47:17.494+0000] {subprocess.py:106} INFO -  'scheduler/dequeued': 3,
+[2025-04-14T23:47:17.498+0000] {subprocess.py:106} INFO -  'scheduler/dequeued/memory': 3,
+[2025-04-14T23:47:17.503+0000] {subprocess.py:106} INFO -  'scheduler/enqueued': 3,
+[2025-04-14T23:47:17.507+0000] {subprocess.py:106} INFO -  'scheduler/enqueued/memory': 3,
+[2025-04-14T23:47:17.511+0000] {subprocess.py:106} INFO -  'start_time': datetime.datetime(2025, 4, 14, 23, 47, 12, 128812, tzinfo=datetime.timezone.utc)}
+[2025-04-14T23:47:17.514+0000] {subprocess.py:106} INFO - 2025-04-14 23:47:16 [scrapy.core.engine] INFO: Spider closed (finished)
+[2025-04-14T23:47:17.517+0000] {subprocess.py:106} INFO - 
+[2025-04-14T23:47:17.520+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Matte Black
+[2025-04-14T23:47:17.524+0000] {subprocess.py:106} INFO - [R$ 287,37]
+[2025-04-14T23:47:17.527+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:17.530+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Matte Black 710ML
+[2025-04-14T23:47:17.533+0000] {subprocess.py:106} INFO - [R$ 272,49]
+[2025-04-14T23:47:17.535+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:17.537+0000] {subprocess.py:106} INFO - GARRAFA STANLEY AEROLIGHT FAST FLOW 1.1Lt ORIGINAL TODAS AS CORES
+[2025-04-14T23:47:17.541+0000] {subprocess.py:106} INFO - [R$ 332,00]
+[2025-04-14T23:47:17.544+0000] {subprocess.py:106} INFO - 4.2 (6)
+[2025-04-14T23:47:17.546+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Lavender 710ML - STANLEY PMI
+[2025-04-14T23:47:17.549+0000] {subprocess.py:106} INFO - [R$ 289,97]
+[2025-04-14T23:47:17.551+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.554+0000] {subprocess.py:106} INFO - Garrafa stanley aerolight fast flow 710ml original todas as cores
+[2025-04-14T23:47:17.558+0000] {subprocess.py:106} INFO - [R$ 304,10]
+[2025-04-14T23:47:17.560+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:17.563+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Matte Black 1,1L Stanley
+[2025-04-14T23:47:17.567+0000] {subprocess.py:106} INFO - [R$ 351,23]
+[2025-04-14T23:47:17.569+0000] {subprocess.py:106} INFO - 4.2 (6)
+[2025-04-14T23:47:17.572+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Citron
+[2025-04-14T23:47:17.575+0000] {subprocess.py:106} INFO - [R$ 315,27]
+[2025-04-14T23:47:17.578+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.580+0000] {subprocess.py:106} INFO - Stanley Garrafa Térmica Aerolight Original Fast Flow Branco Polar 710ml
+[2025-04-14T23:47:17.583+0000] {subprocess.py:106} INFO - [R$ 332,10]
+[2025-04-14T23:47:17.585+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.587+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Lavender
+[2025-04-14T23:47:17.590+0000] {subprocess.py:106} INFO - [R$ 287,37]
+[2025-04-14T23:47:17.592+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.595+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Azul Claro
+[2025-04-14T23:47:17.598+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:17.600+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.603+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Tigerlily
+[2025-04-14T23:47:17.608+0000] {subprocess.py:106} INFO - [R$ 315,27]
+[2025-04-14T23:47:17.613+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:17.618+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 1.1L Pink
+[2025-04-14T23:47:17.621+0000] {subprocess.py:106} INFO - [R$ 289,23]
+[2025-04-14T23:47:17.624+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.628+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 1,1L - Polar
+[2025-04-14T23:47:17.632+0000] {subprocess.py:106} INFO - [R$ 315,27]
+[2025-04-14T23:47:17.634+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.637+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 1,1 Litros
+[2025-04-14T23:47:17.639+0000] {subprocess.py:106} INFO - [R$ 299,46]
+[2025-04-14T23:47:17.642+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.645+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Água
+[2025-04-14T23:47:17.648+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:17.650+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.654+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow 1,1 litros laranja tigerlily 08242-00
+[2025-04-14T23:47:17.656+0000] {subprocess.py:106} INFO - [R$ 343,17]
+[2025-04-14T23:47:17.659+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:17.663+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Citron 710ML
+[2025-04-14T23:47:17.666+0000] {subprocess.py:106} INFO - [R$ 272,49]
+[2025-04-14T23:47:17.669+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.672+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow 1,1 litros verde citron 08208-00
+[2025-04-14T23:47:17.676+0000] {subprocess.py:106} INFO - [R$ 343,17]
+[2025-04-14T23:47:17.679+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.681+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI
+[2025-04-14T23:47:17.684+0000] {subprocess.py:106} INFO - [R$ 359,43]
+[2025-04-14T23:47:17.686+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.689+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow 1,1 litros branco polar 08207-00
+[2025-04-14T23:47:17.692+0000] {subprocess.py:106} INFO - [R$ 343,17]
+[2025-04-14T23:47:17.696+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.699+0000] {subprocess.py:106} INFO - Garrafa termica aerolight flast flow polar 1,1l stanley
+[2025-04-14T23:47:17.702+0000] {subprocess.py:106} INFO - [R$ 378,51]
+[2025-04-14T23:47:17.712+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.716+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Menta
+[2025-04-14T23:47:17.718+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:17.721+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.723+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Verde Limão
+[2025-04-14T23:47:17.726+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:17.728+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.731+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Lilás
+[2025-04-14T23:47:17.739+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:17.744+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.748+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Rosa Claro
+[2025-04-14T23:47:17.752+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:17.754+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.760+0000] {subprocess.py:106} INFO - Garrafa Termica Stanley 710ml Aerolight Fast Flow Original
+[2025-04-14T23:47:17.763+0000] {subprocess.py:106} INFO - [R$ 298,63]
+[2025-04-14T23:47:17.768+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.772+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Stanley Fast Flow 710ml - Tigerlily
+[2025-04-14T23:47:17.781+0000] {subprocess.py:106} INFO - [R$ 287,37]
+[2025-04-14T23:47:17.784+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.788+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Flow - 710ml
+[2025-04-14T23:47:17.790+0000] {subprocess.py:106} INFO - [R$ 313,41]
+[2025-04-14T23:47:17.794+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.796+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml lavender 08241-00
+[2025-04-14T23:47:17.800+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:17.803+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.806+0000] {subprocess.py:106} INFO - Garrafa termica aerolight flast flow black 710ml stanley
+[2025-04-14T23:47:17.811+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:17.814+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.821+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow 1,1L - Stanley
+[2025-04-14T23:47:17.824+0000] {subprocess.py:106} INFO - [R$ 487,00]
+[2025-04-14T23:47:17.827+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.830+0000] {subprocess.py:106} INFO - Garrafa termica aerolight flast flow polar 710ml stanley
+[2025-04-14T23:47:17.834+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:17.836+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.838+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow 1,1 litros azul tropical teal 08408-00
+[2025-04-14T23:47:17.841+0000] {subprocess.py:106} INFO - [R$ 343,17]
+[2025-04-14T23:47:17.843+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.846+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Tigerlily 710ml Stanley
+[2025-04-14T23:47:17.848+0000] {subprocess.py:106} INFO - [R$ 289,23]
+[2025-04-14T23:47:17.851+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.854+0000] {subprocess.py:106} INFO - Garrafa termica aerolight flast flow citron 1,1l stanley
+[2025-04-14T23:47:17.856+0000] {subprocess.py:106} INFO - [R$ 378,51]
+[2025-04-14T23:47:17.859+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.862+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710 ML Azul 0838
+[2025-04-14T23:47:17.865+0000] {subprocess.py:106} INFO - [R$ 369,90]
+[2025-04-14T23:47:17.870+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.873+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Heat Wave Passion Pink 710ML Stanley
+[2025-04-14T23:47:17.876+0000] {subprocess.py:106} INFO - [R$ 306,81]
+[2025-04-14T23:47:17.879+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.882+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Laranja Fast Flow Tigerlily 1,1L Stanley
+[2025-04-14T23:47:17.884+0000] {subprocess.py:106} INFO - [R$ 344,01]
+[2025-04-14T23:47:17.887+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:17.889+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 1.1L Verde Água
+[2025-04-14T23:47:17.892+0000] {subprocess.py:106} INFO - [R$ 289,23]
+[2025-04-14T23:47:17.894+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.897+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow 1,1 litros rosa vivid violet 08407-00
+[2025-04-14T23:47:17.900+0000] {subprocess.py:106} INFO - [R$ 343,17]
+[2025-04-14T23:47:17.903+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.906+0000] {subprocess.py:106} INFO - Garrafa Térmica STanley Aerolight Fast Flow 1,1L
+[2025-04-14T23:47:17.909+0000] {subprocess.py:106} INFO - [R$ 368,18]
+[2025-04-14T23:47:17.912+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.915+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml passion pink 08404-00
+[2025-04-14T23:47:17.918+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:17.921+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.924+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml azul tropical teal 08406-00
+[2025-04-14T23:47:17.928+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:17.931+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.934+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Stanley Citron 710 Ml
+[2025-04-14T23:47:17.936+0000] {subprocess.py:106} INFO - [R$ 365,00]
+[2025-04-14T23:47:17.939+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.941+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml laranja tigerlily 08204-00
+[2025-04-14T23:47:17.944+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:17.948+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.951+0000] {subprocess.py:106} INFO - Garrafa stanley térmica aerolight fast flow em aço inox 710ml vivid violet 08405-00
+[2025-04-14T23:47:17.954+0000] {subprocess.py:106} INFO - [R$ 324,57]
+[2025-04-14T23:47:17.959+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.966+0000] {subprocess.py:106} INFO - Garrafa termica aerolight flast flow black 1,1l stanley
+[2025-04-14T23:47:17.969+0000] {subprocess.py:106} INFO - [R$ 378,51]
+[2025-04-14T23:47:17.975+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:17.978+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Citron 710ml Stanley
+[2025-04-14T23:47:17.985+0000] {subprocess.py:106} INFO - [R$ 289,23]
+[2025-04-14T23:47:17.995+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.012+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Heat Wave Rose Quartz Glow 710ML Stanley
+[2025-04-14T23:47:18.016+0000] {subprocess.py:106} INFO - [R$ 306,81]
+[2025-04-14T23:47:18.021+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.025+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Citron 1,1 Litros - STANLEY PMI
+[2025-04-14T23:47:18.028+0000] {subprocess.py:106} INFO - [R$ 371,07]
+[2025-04-14T23:47:18.032+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.037+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Lavender 710ML - STANLEY PMI
+[2025-04-14T23:47:18.048+0000] {subprocess.py:106} INFO - [R$ 361,77]
+[2025-04-14T23:47:18.061+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.068+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Stanley 710ML
+[2025-04-14T23:47:18.074+0000] {subprocess.py:106} INFO - [R$ 359,91]
+[2025-04-14T23:47:18.078+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.084+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow 710ml Laranja
+[2025-04-14T23:47:18.087+0000] {subprocess.py:106} INFO - [R$ 268,57]
+[2025-04-14T23:47:18.094+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.098+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Polar 1,1L Stanley
+[2025-04-14T23:47:18.102+0000] {subprocess.py:106} INFO - [R$ 351,23]
+[2025-04-14T23:47:18.106+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.110+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Branco Polar 710ML - STANLEY PMI
+[2025-04-14T23:47:18.113+0000] {subprocess.py:106} INFO - [R$ 361,77]
+[2025-04-14T23:47:18.117+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.124+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley Aerolight Fast Flow Original Laranja Tigerlily 1,1 L
+[2025-04-14T23:47:18.130+0000] {subprocess.py:106} INFO - [R$ 379,00]
+[2025-04-14T23:47:18.141+0000] {subprocess.py:106} INFO - 5.0 (1)
+[2025-04-14T23:47:18.144+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow Polar 710ml Stanley
+[2025-04-14T23:47:18.146+0000] {subprocess.py:106} INFO - [R$ 289,23]
+[2025-04-14T23:47:18.150+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.153+0000] {subprocess.py:106} INFO - Garrafa Térmica Stanley IceFlow Aerolight Fast Flow 700ml - Cinza
+[2025-04-14T23:47:18.155+0000] {subprocess.py:106} INFO - [R$ 448,45]
+[2025-04-14T23:47:18.161+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.165+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow 1,1L Tropical Teal Stanley
+[2025-04-14T23:47:18.168+0000] {subprocess.py:106} INFO - [R$ 395,00]
+[2025-04-14T23:47:18.171+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.175+0000] {subprocess.py:106} INFO - Garrafa Térmica Aerolight Fast Flow 1,1L Polar Stanley
+[2025-04-14T23:47:18.178+0000] {subprocess.py:106} INFO - [R$ 379,00]
+[2025-04-14T23:47:18.184+0000] {subprocess.py:106} INFO - None
+[2025-04-14T23:47:18.194+0000] {subprocess.py:110} INFO - Command exited with return code 0
+[2025-04-14T23:47:18.386+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-14T23:47:18.389+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=pipeline_garrafa_stanley, task_id=scrap_magalu, run_id=manual__2025-04-14T23:47:03.211802+00:00, execution_date=20250414T234703, start_date=20250414T234707, end_date=20250414T234718
+[2025-04-14T23:47:18.669+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-14T23:47:18.823+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-14T23:47:18.831+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

@@ -1,0 +1,25 @@
+[2025-04-15T01:52:07.037+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-15T01:52:07.112+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_garrafa_stanley.ai_feedback manual__2025-04-15T01:51:34.057805+00:00 [queued]>
+[2025-04-15T01:52:07.144+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_garrafa_stanley.ai_feedback manual__2025-04-15T01:51:34.057805+00:00 [queued]>
+[2025-04-15T01:52:07.146+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-15T01:52:07.175+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): ai_feedback> on 2025-04-15 01:51:34.057805+00:00
+[2025-04-15T01:52:07.187+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=687) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-15T01:52:07.191+0000] {standard_task_runner.py:72} INFO - Started process 689 to run task
+[2025-04-15T01:52:07.194+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'pipeline_garrafa_stanley', 'ai_feedback', 'manual__2025-04-15T01:51:34.057805+00:00', '--job-id', '207', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmpr0n_indz']
+[2025-04-15T01:52:07.200+0000] {standard_task_runner.py:105} INFO - Job 207: Subtask ai_feedback
+[2025-04-15T01:52:07.374+0000] {task_command.py:467} INFO - Running <TaskInstance: pipeline_garrafa_stanley.ai_feedback manual__2025-04-15T01:51:34.057805+00:00 [running]> on host 28ab01396367
+[2025-04-15T01:52:07.697+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline_garrafa_stanley' AIRFLOW_CTX_TASK_ID='ai_feedback' AIRFLOW_CTX_EXECUTION_DATE='2025-04-15T01:51:34.057805+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-15T01:51:34.057805+00:00'
+[2025-04-15T01:52:07.700+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-15T01:52:07.762+0000] {logging_mixin.py:190} INFO - "[{'preco': 272.5447833433377, 'data': '12/04/2025', 'capacidade': '710ml'}, {'preco': 269.0608313067965, 'data': '11/04/2025', 'capacidade': '710ml'}, {'preco': 364.98922935779837, 'data': '14/04/2025', 'capacidade': '1100ml'}, {'preco': 316.3198969072181, 'data': '14/04/2025', 'capacidade': '710ml'}, {'preco': 337.8895705952379, 'data': '12/04/2025', 'capacidade': '1100ml'}, {'preco': 318.73805210918306, 'data': '15/04/2025', 'capacidade': '710ml'}, {'preco': 332.5330719410694, 'data': '11/04/2025', 'capacidade': '1100ml'}, {'preco': 365.18067708333393, 'data': '15/04/2025', 'capacidade': '1100ml'}]"
+[2025-04-15T01:52:09.740+0000] {logging_mixin.py:190} INFO - {
+  "analise": "O preço do produto de 710ml subiu 18.47% entre 11/04/2025 e 15/04/2025, enquanto o preço do produto de 1100ml subiu 9.82% no mesmo período.",
+  "insight": "Considerando o aumento nos preços, uma campanha de descontos focada em grandes volumes poderia ser atrativa para os consumidores."
+}
+[2025-04-15T01:52:09.743+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-15T01:52:09.790+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-15T01:52:09.792+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=pipeline_garrafa_stanley, task_id=ai_feedback, run_id=manual__2025-04-15T01:51:34.057805+00:00, execution_date=20250415T015134, start_date=20250415T015207, end_date=20250415T015209
+[2025-04-15T01:52:09.940+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-15T01:52:10.015+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-15T01:52:10.020+0000] {local_task_job_runner.py:245} INFO - ::endgroup::

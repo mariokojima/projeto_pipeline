@@ -1,0 +1,22 @@
+[2025-04-14T23:36:46.974+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2025-04-14T23:36:47.076+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: pipeline_garrafa_stanley.storage_scrap manual__2025-04-14T23:36:27.273465+00:00 [queued]>
+[2025-04-14T23:36:47.099+0000] {taskinstance.py:2614} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: pipeline_garrafa_stanley.storage_scrap manual__2025-04-14T23:36:27.273465+00:00 [queued]>
+[2025-04-14T23:36:47.101+0000] {taskinstance.py:2867} INFO - Starting attempt 1 of 1
+[2025-04-14T23:36:47.132+0000] {taskinstance.py:2890} INFO - Executing <Task(PythonOperator): storage_scrap> on 2025-04-14 23:36:27.273465+00:00
+[2025-04-14T23:36:47.144+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=2929) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2025-04-14T23:36:47.155+0000] {standard_task_runner.py:72} INFO - Started process 2931 to run task
+[2025-04-14T23:36:47.151+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'pipeline_garrafa_stanley', 'storage_scrap', 'manual__2025-04-14T23:36:27.273465+00:00', '--job-id', '93', '--raw', '--subdir', 'DAGS_FOLDER/pipeline.py', '--cfg-path', '/tmp/tmp71ecqfse']
+[2025-04-14T23:36:47.158+0000] {standard_task_runner.py:105} INFO - Job 93: Subtask storage_scrap
+[2025-04-14T23:36:47.349+0000] {task_command.py:467} INFO - Running <TaskInstance: pipeline_garrafa_stanley.storage_scrap manual__2025-04-14T23:36:27.273465+00:00 [running]> on host a68e7f38875d
+[2025-04-14T23:36:47.673+0000] {taskinstance.py:3134} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='pipeline_garrafa_stanley' AIRFLOW_CTX_TASK_ID='storage_scrap' AIRFLOW_CTX_EXECUTION_DATE='2025-04-14T23:36:27.273465+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-04-14T23:36:27.273465+00:00'
+[2025-04-14T23:36:47.676+0000] {taskinstance.py:732} INFO - ::endgroup::
+[2025-04-14T23:36:47.729+0000] {logging_mixin.py:190} INFO - Bucket bucket-coleta already exists
+[2025-04-14T23:36:47.774+0000] {logging_mixin.py:190} INFO - /opt/***/dags/scrap_result.csv Arquivado com Sucesso  scrap_result_2025-04-14_23:36:45.csv no repositório bucket-coleta
+[2025-04-14T23:36:47.776+0000] {python.py:240} INFO - Done. Returned value was: None
+[2025-04-14T23:36:47.820+0000] {taskinstance.py:341} INFO - ::group::Post task execution logs
+[2025-04-14T23:36:47.822+0000] {taskinstance.py:353} INFO - Marking task as SUCCESS. dag_id=pipeline_garrafa_stanley, task_id=storage_scrap, run_id=manual__2025-04-14T23:36:27.273465+00:00, execution_date=20250414T233627, start_date=20250414T233647, end_date=20250414T233647
+[2025-04-14T23:36:47.980+0000] {local_task_job_runner.py:266} INFO - Task exited with return code 0
+[2025-04-14T23:36:48.068+0000] {taskinstance.py:3901} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2025-04-14T23:36:48.074+0000] {local_task_job_runner.py:245} INFO - ::endgroup::
